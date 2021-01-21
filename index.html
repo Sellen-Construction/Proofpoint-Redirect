@@ -240,11 +240,15 @@
 
       /* End of Helper Functions - Uncomment above */
 
+  const urlParams = new URLSearchParams(window.location.search);
+  var urlCategory = 'Blocked URL';
+  var targetUrl = urlParams.get('blocked_url');
+
   // ---------
   // General Test Data
   // ---------
-      var urlCategory = 'Web Email';
-      var targetUrl = 'www.gmail.com';
+      //var urlCategory = 'Web Email';
+      //var targetUrl = 'www.gmail.com';
 
   // ---------
   // Blockpage Message (Customizable)
